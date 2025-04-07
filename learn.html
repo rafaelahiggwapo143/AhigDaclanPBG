@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn</title>
+</head>
+<style>
+    #learn {
+    padding: 100px 200px;
+    text-align: center;
+    background-color: #000000;
+    box-shadow: 50px 40px 30px rgb(76, 105, 233);
+    animation: fadeIn 1.5s ease forwards;
+
+}
+
+#learn h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#learn p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+.learn-container {
+   
+        
+        margin: auto;
+        text-align: center;
+        height: 40vh;
+        animation: fadeIn 1.5s ease forwards;
+    
+    }
+    
+    .learn-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+    
+    .video {
+        background: #791717;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 20px 10px 50px rgb(255, 255, 255);
+     
+    }
+    
+    .video:hover {
+        transform: translateY(-5px);
+    }
+    
+    .video iframe {
+        width: 100%;
+        height: 250px;
+        border-radius: 5px;
+        border: none;
+    }
+    
+    .video p {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    .map-wrapper {
+        position: relative;
+        width:90%;
+        height: 400px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    iframe {
+        width: 100%;
+        height: 100%;
+        pointer-events: none; 
+        transition: 0.3s ease-in-out;
+    }
+    
+    .map-wrapper:hover iframe {
+        pointer-events: auto;
+    }
+    
+    .map-link {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 12px;
+        background: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+    
+    .map-link:hover {
+        background: #0056b3;
+    }
+
+    aside {
+    
+    padding: 2em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    transition: 0.3s ease;
+
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid blueviolet;
+
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+
+</style>
+<body>
+    
+
+    <div class="learn-container" id='learn'>
+        <h1 style="color: aliceblue;" class="learn-title">Learn</h1>
+        <div class="grid">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU?si=V7hZ5kj49t55ahZr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>HTML Tutorial</p>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/1PnVor36_40" allowfullscreen></iframe>
+                <p>CSS Tutorial</p>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/YszONjKpgg4" allowfullscreen></iframe>
+               <br>
+                <p>CSS Animations Tutorial</p>
+            </div>
+            
+        </div>
+    </div>
+    <div class="contact_container" id="contact">
+        <center>
+            <br>
+
+      <big>  <h2>School Location</h2></big>
+        
+        <div class="map-wrapper">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1962.7963174676763!2d123.89408570914486!3d10.29436956322843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99bfcc60d650d%3A0x5ee73506c68dd233!2sCebu%20Eastern%20College%20Cebu%20city!5e0!3m2!1sen!2sph!4v1730774213169!5m2!1sen!2sph"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <a class="map-link" href="https://www.google.com/maps/place/Cebu+Eastern+College/@10.2943696,123.8940857,17z" target="_blank">Open in Google Maps</a>
+    </center>
+
+    </div><center>
+    <h2>My Favorite Emojis</h2>
+                <ul> 
+                    <li>&#128507; Mountain</li>
+                    <li>&#128509; Statue Of Liberty</li>
+                    <li>&#128511; Sigma Boy</li>
+                    <li>&#128514; Laugh</li></center>
+                </ul>
+            </aside>
+
+            <footer class="footer">
+                <div class="social">
+                   <a href="#"><svg width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684v-2.86A22.108 22.108 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.21h2.753v8.201h3.312Z"></path>
+                  </svg></a>
+                   <a href="#"><svg width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.999 7.375a4.624 4.624 0 1 0 0 9.248 4.624 4.624 0 0 0 0-9.248Zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008Z"></path>
+                    <path d="M16.805 8.289a1.078 1.078 0 1 0 0-2.156 1.078 1.078 0 0 0 0 2.156Z"></path>
+                    <path d="M20.533 6.114A4.605 4.605 0 0 0 17.9 3.482a6.607 6.607 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632A6.585 6.585 0 0 0 3.058 8.3c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.583 6.583 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.616 6.616 0 0 0 2.186-.42 4.613 4.613 0 0 0 2.633-2.632c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.583 6.583 0 0 0-.421-2.217Zm-1.218 9.532a5.046 5.046 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.71c-.535.2-1.1.305-1.67.312-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.961 4.961 0 0 1-1.67-.311 2.985 2.985 0 0 1-1.718-1.711 5.08 5.08 0 0 1-.311-1.67c-.043-.95-.053-1.217-.053-3.653 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.79.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.95-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.31 2.99 2.99 0 0 1 1.712 1.713 5.06 5.06 0 0 1 .311 1.669c.043.95.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011v-.001Z"></path>
+                  </svg></a>
+                   <a href="#"><svg width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.282 10.356h-8.326v3.45h4.791c-.445 2.194-2.313 3.454-4.791 3.454a5.27 5.27 0 0 1-5.28-5.28 5.27 5.27 0 0 1 5.28-5.28 5.17 5.17 0 0 1 3.29 1.179l2.6-2.6c-1.584-1.38-3.616-2.232-5.89-2.232a8.908 8.908 0 0 0-8.934 8.934 8.907 8.907 0 0 0 8.934 8.934c4.466 0 8.529-3.25 8.529-8.934 0-.528-.081-1.097-.203-1.625Z"></path>
+                  </svg></a>
+                   <a href="#"><svg width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1h-.04Z"></path>
+                  </svg></a>
+                </div>
+        
+                <ul class="list">
+                    <li>
+                        <a href="faqui">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="education.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+        
+                <p class="copyright">&copy; 2025 Rafael Ahig | Mark Daclan BSIT Sec 4. All Rights Reserved.</p>
+            </footer>
+    
+       
+
+    
+</body>
+</html>

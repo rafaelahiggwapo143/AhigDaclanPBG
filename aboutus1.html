@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile: Rafael Ahig</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    line-height: 1.6;
+    padding: 0;
+    background-image: linear-gradient(to right, #e6f7ff, #cce6ff); 
+}
+
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-section {
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(82, 78, 78, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 40px;
+    animation: slideIn 1s ease-out; 
+}
+
+
+.profile-header {
+    text-align: center;
+    padding: -10px;
+    background-color: #3b3a3a; 
+    color: #fff;
+    border-bottom: 2px solid #ccc;
+}
+
+.profile-title {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.profile-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+
+.profile-content {
+    padding: 30px;
+}
+
+.profile-info {
+    margin-bottom: 30px;
+}
+
+.info-item {
+    font-size: -0.5rem;
+    margin-bottom: 12px;
+}
+
+.info-item strong {
+    color: #007bff;
+}
+
+
+.skills-experience {
+    margin-bottom: 30px;
+}
+
+.skills-title {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.skills-list li {
+    font-size: -0.9rem;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+
+.education {
+    margin-bottom: 30px;
+}
+
+.education-title {
+    font-size: 2.5rem;
+    color: #0077ff;
+    margin-bottom: 10px;
+}
+
+.education-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.education-list li {
+    font-size: -0.5rem;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease forwards;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .profile-title {
+        font-size: 2.5rem;
+    }
+
+    .profile-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .info-item {
+        font-size: 1rem;
+    }
+
+    .skills-title, .education-title {
+        font-size: 1.8rem;
+    }
+}
+
+</style>
+<body>
+
+
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-header">
+                <h1 class="profile-title fade-in">PROFILE INFORMATION</h1>
+                <h1 class="profile-subtitle fade-in">RAFAEL AHIG</h1>
+            </div>
+            
+            <div class="profile-content fade-in">
+                <div class="profile-info">
+                    <div class="info-item">
+                        <strong>Name:</strong> Rafael Ahig
+                    </div>
+                    <div class="info-item">
+                        <strong>Age:</strong> 19
+                    </div>
+                    <div class="info-item">
+                        <strong>Birthdate:</strong> November 24, 2005
+                    </div>
+                    <div class="info-item">
+                        <strong>Address:</strong> Sitio Chicos, Tisa, Cebu City 
+                    </div>
+                    <div class="info-item">
+                        <strong>Contact Number:</strong> 09685470751
+                    </div>
+                </div>
+
+                <div class="skills-experience">
+                    <h2 class="skills-title fade-in">Skills and Experience</h2>
+                    <ul class="skills-list fade-in">
+                        <li>Encoding</li>
+                        <li>Computer Assemble and Disassemble</li>
+                        <li>Wifi Installation</li>
+                    </ul>
+                </div>
+
+                <div class="education">
+                    <h2 class="education-title fade-in">Education</h2>
+                    <ul class="education-list fade-in">
+                        <li><strong>Primary (Elementary):</strong> Tisa 2 Elementary School</li>
+                        <li><strong>Secondary:</strong> Tisa 1 National High School</li>
+                        <li><strong>College:</strong> Cebu Eastern College</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
